@@ -1,0 +1,360 @@
+<!--
+═══════════════════════════════════════════════════════════════
+🚀 FB PRO AI STUDIO V2.0
+Powered by NPA Smart System VVIP
+
+Ultimate Facebook Content Creator
+
+Author      : PakD Sugiarto Kurniawan
+Development : OpenAI ChatGPT
+Version     : 2.0.0
+Build       : July 2026
+
+Copyright © 2026
+NPA Smart System VVIP
+All Rights Reserved.
+═══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0,
+                   maximum-scale=1.0,
+                   user-scalable=no">
+
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+
+    <meta name="theme-color"
+          content="#0f172a">
+
+    <meta name="description"
+          content="FB PRO AI STUDIO V2.0 Powered by NPA Smart System VVIP">
+
+    <meta name="keywords"
+          content="Facebook Pro, AI Studio, Thumbnail, Caption, Prompt AI, Storyboard">
+
+    <meta name="author"
+          content="PakD Sugiarto Kurniawan">
+
+    <title>
+        🚀 FB PRO AI STUDIO V2.0
+    </title>
+
+    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/layout.css">
+
+    <link rel="stylesheet"
+          href="css/components.css">
+
+    <link rel="stylesheet"
+          href="css/forms.css">
+
+    <link rel="stylesheet"
+          href="css/buttons.css">
+
+    <link rel="stylesheet"
+          href="css/preview.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+    <!-- Tailwind Config -->
+
+    <script>
+
+        tailwind.config = {
+
+            darkMode: 'class',
+
+            theme: {
+
+                extend: {
+
+                    fontFamily: {
+
+                        poppins: ['Poppins', 'sans-serif']
+
+                    },
+
+                    colors: {
+
+                        primary: '#2563eb',
+
+                        secondary: '#f59e0b',
+
+                        danger: '#ef4444',
+
+                        success: '#22c55e',
+
+                        darkbg: '#0f172a',
+
+                        card: '#1e293b'
+
+                    },
+
+                    boxShadow: {
+
+                        glass: '0 8px 32px rgba(0,0,0,.35)'
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+</head>
+<body class="bg-darkbg text-white font-poppins overflow-x-hidden">
+
+    <!-- ==========================================================
+         SPLASH SCREEN
+    =========================================================== -->
+
+    <div id="loadingScreen"
+        class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-950">
+
+        <div class="text-6xl mb-6 animate-bounce">
+            🚀
+        </div>
+
+        <h1 class="text-3xl font-extrabold tracking-wide text-center">
+            FB PRO AI STUDIO
+        </h1>
+
+        <p class="text-xl font-semibold text-yellow-400 mt-2">
+            Version 2.0
+        </p>
+
+        <p class="mt-4 text-slate-300">
+            Powered by
+        </p>
+
+        <h2 class="text-lg font-bold text-blue-400">
+            NPA Smart System VVIP
+        </h2>
+
+        <div class="mt-8 w-56 h-2 rounded-full bg-slate-700 overflow-hidden">
+
+            <div
+                class="h-full w-0 bg-gradient-to-r from-blue-500 via-cyan-400 to-yellow-400 animate-pulse"
+                id="loadingBar">
+            </div>
+
+        </div>
+
+        <p class="text-sm text-slate-400 mt-4">
+            Ultimate Facebook Content Creator
+        </p>
+
+    </div>
+
+    <!-- ==========================================================
+         MAIN WRAPPER
+    =========================================================== -->
+
+    <div class="flex min-h-screen">
+
+        <!-- ======================================================
+             SIDEBAR
+        ======================================================= -->
+
+        <aside
+            class="hidden lg:flex flex-col w-72 bg-slate-900 border-r border-slate-800 shadow-2xl">
+
+            <!-- Logo -->
+
+            <div class="p-6 border-b border-slate-800">
+
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center text-3xl">
+
+                        🚀
+
+                    </div>
+
+                    <div>
+
+                        <h1 class="text-lg font-extrabold">
+
+                            FB PRO AI STUDIO
+
+                        </h1>
+
+                        <p class="text-xs text-yellow-400">
+
+                            Version 2.0
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="mt-5 rounded-xl bg-slate-800 p-4 text-center">
+
+                    <p class="text-xs text-slate-400">
+
+                        Powered by
+
+                    </p>
+
+                    <h3 class="text-sm font-bold text-cyan-400">
+
+                        NPA Smart System VVIP
+
+                    </h3>
+
+                </div>
+
+            </div>
+
+            <!-- Menu -->
+
+            <nav class="flex-1 overflow-y-auto p-4 space-y-2">
+
+                <a href="#"
+                    class="flex items-center gap-3 rounded-xl bg-blue-600 px-4 py-3 font-semibold hover:bg-blue-500 transition">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+                <a href="#"
+                    class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-slate-800 transition">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Caption Studio
+
+                </a>
+
+                <a href="#"
+                    class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-slate-800 transition">
+
+                    <i class="fa-solid fa-image"></i>
+
+                    Thumbnail Studio
+
+                </a>
+
+                <a href="#"
+                    class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-slate-800 transition">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    Prompt Studio
+
+                </a>
+
+                <a href="#"
+                    class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-slate-800 transition">
+
+                    <i class="fa-solid fa-video"></i>
+
+                    Storyboard AI
+
+                </a>
+
+                <a href="#"
+                    class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-slate-800 transition">
+
+                    <i class="fa-solid fa-microphone-lines"></i>
+
+                    Voice Over
+
+                </a>
+
+                <a href="#"
+                    class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-slate-800 transition">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    CTR Score
+
+                </a>
+
+                <a href="#"
+                    class="flex items-center gap-3 rounded-xl px-4 py-3 hover:bg-slate-800 transition">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    Settings
+
+                </a>
+
+            </nav>
+
+            <!-- Footer -->
+
+            <div
+                class="border-t border-slate-800 p-5 text-center">
+
+                <p class="text-xs text-slate-500">
+
+                    © 2026
+
+                </p>
+
+                <p class="text-sm font-semibold text-white">
+
+                    FB PRO AI STUDIO
+
+                </p>
+
+                <p class="text-xs text-yellow-400">
+
+                    Powered by NPA Smart System VVIP
+
+                </p>
+
+            </div>
+
+        </aside>
+
+        <!-- ======================================================
+             CONTENT WRAPPER
+        ======================================================= -->
+
+        <main class="flex-1">
