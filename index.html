@@ -358,3 +358,1203 @@ All Rights Reserved.
         ======================================================= -->
 
         <main class="flex-1">
+<!-- ======================================================
+     TOP HEADER
+======================================================= -->
+
+<header
+class="sticky top-0 z-30 bg-slate-900/80 backdrop-blur-lg border-b border-slate-800">
+
+<div class="flex items-center justify-between px-6 py-5">
+
+    <!-- LEFT -->
+
+    <div class="flex items-center gap-4">
+
+        <!-- Mobile Menu -->
+
+        <button
+        id="btnSidebar"
+        class="lg:hidden w-11 h-11 rounded-xl bg-slate-800 hover:bg-slate-700 transition">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <div>
+
+            <h1 class="text-2xl font-extrabold">
+
+                Dashboard
+
+            </h1>
+
+            <p class="text-sm text-slate-400">
+
+                Welcome to FB PRO AI STUDIO V2.0
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="flex items-center gap-4">
+
+        <!-- Search -->
+
+        <div class="hidden md:flex">
+
+            <div
+            class="flex items-center gap-3 rounded-xl bg-slate-800 px-4 py-2">
+
+                <i class="fa-solid fa-magnifying-glass text-slate-400"></i>
+
+                <input
+                id="txtSearch"
+                type="text"
+                placeholder="Cari menu..."
+                class="bg-transparent outline-none text-sm w-48">
+
+            </div>
+
+        </div>
+
+        <!-- AI Status -->
+
+        <div
+        class="hidden md:flex items-center gap-2 bg-emerald-600 px-4 py-2 rounded-full">
+
+            <span
+            class="w-2.5 h-2.5 rounded-full bg-white animate-pulse"></span>
+
+            <span class="text-sm font-semibold">
+
+                AI Ready
+
+            </span>
+
+        </div>
+
+        <!-- Date -->
+
+        <div
+        class="hidden lg:block text-right">
+
+            <p class="text-xs text-slate-400">
+
+                Hari Ini
+
+            </p>
+
+            <p
+            id="currentDate"
+            class="font-semibold">
+
+                Loading...
+
+            </p>
+
+        </div>
+
+        <!-- Profile -->
+
+        <div
+        class="flex items-center gap-3 rounded-2xl bg-slate-800 px-4 py-2">
+
+            <div
+            class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-xl font-bold">
+
+                🚀
+
+            </div>
+
+            <div class="hidden md:block">
+
+                <h3 class="font-bold">
+
+                    PakD Sugiarto
+
+                </h3>
+
+                <p class="text-xs text-yellow-400">
+
+                    NPA Smart System VVIP
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</header>
+
+<!-- ======================================================
+     HERO DASHBOARD
+======================================================= -->
+
+<section class="p-6">
+
+<div
+class="rounded-3xl bg-gradient-to-r from-blue-700 via-cyan-600 to-sky-500 p-8 shadow-2xl">
+
+<div class="flex flex-col lg:flex-row justify-between items-center gap-8">
+
+<div>
+
+<h2 class="text-4xl font-extrabold leading-tight">
+
+🚀 FB PRO AI STUDIO
+
+</h2>
+
+<p class="text-xl mt-2">
+
+Version 2.0
+
+</p>
+
+<p class="mt-4 text-white/90 max-w-xl">
+
+One Click AI Content Creator untuk Facebook Pro.
+
+Buat Caption, Thumbnail, Prompt AI,
+Storyboard, Voice Over, CTA,
+dan Hashtag hanya dalam satu dashboard.
+
+</p>
+
+<div class="mt-8 flex flex-wrap gap-3">
+
+<span class="bg-white/20 px-4 py-2 rounded-full">
+
+🎨 Thumbnail AI
+
+</span>
+
+<span class="bg-white/20 px-4 py-2 rounded-full">
+
+📝 Caption AI
+
+</span>
+
+<span class="bg-white/20 px-4 py-2 rounded-full">
+
+🎬 Storyboard
+
+</span>
+
+<span class="bg-white/20 px-4 py-2 rounded-full">
+
+🤖 Prompt Generator
+
+</span>
+
+</div>
+
+</div>
+
+<div>
+
+<div
+class="w-56 h-56 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-8xl shadow-2xl">
+
+🚀
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ======================================================
+     DASHBOARD STATISTICS
+======================================================= -->
+
+<section class="px-6 pb-6">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+
+        <div
+        class="rounded-3xl bg-slate-900 border border-slate-800 p-6 shadow-xl hover:scale-105 hover:border-blue-500 transition duration-300">
+
+            <div class="flex justify-between items-center">
+
+                <div>
+
+                    <p class="text-slate-400 text-sm">
+
+                        Total Caption
+
+                    </p>
+
+                    <h2
+                    id="totalCaption"
+                    class="text-4xl font-extrabold mt-3">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+                <div
+                class="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center text-3xl">
+
+                    📝
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div
+        class="rounded-3xl bg-slate-900 border border-slate-800 p-6 shadow-xl hover:scale-105 hover:border-yellow-500 transition duration-300">
+
+            <div class="flex justify-between items-center">
+
+                <div>
+
+                    <p class="text-slate-400 text-sm">
+
+                        Thumbnail AI
+
+                    </p>
+
+                    <h2
+                    id="totalThumbnail"
+                    class="text-4xl font-extrabold mt-3">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+                <div
+                class="w-16 h-16 rounded-2xl bg-yellow-500 flex items-center justify-center text-3xl">
+
+                    🎨
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div
+        class="rounded-3xl bg-slate-900 border border-slate-800 p-6 shadow-xl hover:scale-105 hover:border-emerald-500 transition duration-300">
+
+            <div class="flex justify-between items-center">
+
+                <div>
+
+                    <p class="text-slate-400 text-sm">
+
+                        Prompt AI
+
+                    </p>
+
+                    <h2
+                    id="totalPrompt"
+                    class="text-4xl font-extrabold mt-3">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+                <div
+                class="w-16 h-16 rounded-2xl bg-emerald-600 flex items-center justify-center text-3xl">
+
+                    🤖
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div
+        class="rounded-3xl bg-slate-900 border border-slate-800 p-6 shadow-xl hover:scale-105 hover:border-red-500 transition duration-300">
+
+            <div class="flex justify-between items-center">
+
+                <div>
+
+                    <p class="text-slate-400 text-sm">
+
+                        Total Project
+
+                    </p>
+
+                    <h2
+                    id="totalProject"
+                    class="text-4xl font-extrabold mt-3">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+                <div
+                class="w-16 h-16 rounded-2xl bg-red-600 flex items-center justify-center text-3xl">
+
+                    🚀
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ======================================================
+     QUICK ACTION
+======================================================= -->
+
+<section class="px-6 pb-8">
+
+    <div
+    class="rounded-3xl bg-slate-900 border border-slate-800 p-6 shadow-xl">
+
+        <div class="flex items-center justify-between flex-wrap gap-4">
+
+            <div>
+
+                <h2 class="text-2xl font-bold">
+
+                    ⚡ Quick Action
+
+                </h2>
+
+                <p class="text-slate-400 mt-1">
+
+                    Generate seluruh kebutuhan konten Facebook Pro hanya dengan satu klik.
+
+                </p>
+
+            </div>
+
+            <button
+            id="btnGenerateAll"
+            class="px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:scale-105 transition font-bold text-lg shadow-xl">
+
+                🚀 GENERATE ALL
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ======================================================
+     CONTENT GENERATOR
+======================================================= -->
+
+<section class="px-6 pb-8">
+
+<div class="grid lg:grid-cols-2 gap-6">
+
+    <!-- LEFT PANEL -->
+
+    <div
+    class="rounded-3xl bg-slate-900 border border-slate-800 p-6 shadow-xl">
+
+        <h2 class="text-2xl font-bold mb-2">
+
+            📷 Upload Photo
+
+        </h2>
+
+        <p class="text-slate-400 mb-6">
+
+            Upload foto terbaik Anda untuk dijadikan bahan analisa AI.
+
+        </p>
+
+        <div
+        class="border-2 border-dashed border-slate-700 rounded-3xl p-8 text-center hover:border-blue-500 transition">
+
+            <img
+            id="previewImage"
+            src="https://placehold.co/600x600/0f172a/FFFFFF?text=UPLOAD+PHOTO"
+            class="w-full rounded-2xl shadow-lg mb-6">
+
+            <input
+
+            id="photoUpload"
+
+            type="file"
+
+            accept="image/*"
+
+            class="hidden">
+
+            <button
+
+            id="btnUpload"
+
+            onclick="document.getElementById('photoUpload').click()"
+
+            class="w-full bg-blue-600 hover:bg-blue-500 rounded-xl py-4 font-bold">
+
+                📁 Upload Foto
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div
+    class="rounded-3xl bg-slate-900 border border-slate-800 p-6 shadow-xl">
+
+        <h2 class="text-2xl font-bold">
+
+            🤖 AI Photo Analysis
+
+        </h2>
+
+        <p class="text-slate-400 mt-2">
+
+            Analisa visual otomatis sebelum membuat konten.
+
+        </p>
+
+        <div class="mt-6 space-y-4">
+
+            <div class="flex justify-between">
+
+                <span>😊 Ekspresi</span>
+
+                <span id="aiExpression"
+                class="text-cyan-400">
+
+                Menunggu...
+
+                </span>
+
+            </div>
+
+            <div class="flex justify-between">
+
+                <span>🎨 Warna Dominan</span>
+
+                <span id="aiColor"
+                class="text-cyan-400">
+
+                Menunggu...
+
+                </span>
+
+            </div>
+
+            <div class="flex justify-between">
+
+                <span>💡 Mood</span>
+
+                <span id="aiMood"
+                class="text-cyan-400">
+
+                Menunggu...
+
+                </span>
+
+            </div>
+
+            <div class="flex justify-between">
+
+                <span>📍 Komposisi</span>
+
+                <span id="aiComposition"
+                class="text-cyan-400">
+
+                Menunggu...
+
+                </span>
+
+            </div>
+
+            <div class="flex justify-between">
+
+                <span>🔥 CTR Prediction</span>
+
+                <span id="ctrPrediction"
+                class="text-yellow-400 font-bold">
+
+                --
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+<!-- ======================================================
+     CONTENT SETTINGS
+======================================================= -->
+
+<section class="px-6 pb-8">
+
+<div
+class="rounded-3xl bg-slate-900 border border-slate-800 p-8 shadow-xl">
+
+<h2 class="text-2xl font-bold">
+
+⚙️ Content Settings
+
+</h2>
+
+<div class="grid lg:grid-cols-2 gap-6 mt-8">
+
+<div>
+
+<label class="font-semibold">
+
+Tema Konten
+
+</label>
+
+<input
+
+id="txtTema"
+
+type="text"
+
+placeholder="Contoh : NganggurAjaBisa"
+
+class="w-full mt-2 rounded-xl bg-slate-800 p-4 outline-none">
+
+</div>
+
+<div>
+
+<label class="font-semibold">
+
+Target Audience
+
+</label>
+
+<select
+
+id="ddlAudience"
+
+class="w-full mt-2 rounded-xl bg-slate-800 p-4">
+
+<option>Affiliate</option>
+
+<option>UMKM</option>
+
+<option>Emak-emak</option>
+
+<option>Karyawan</option>
+
+<option>Guru</option>
+
+<option>Mahasiswa</option>
+
+<option>Pengangguran</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label class="font-semibold">
+
+Gaya Bahasa
+
+</label>
+
+<select
+
+id="ddlStyle"
+
+class="w-full mt-2 rounded-xl bg-slate-800 p-4">
+
+<option>Nyinyir</option>
+
+<option>Sarkas</option>
+
+<option>Soft Selling</option>
+
+<option>Hard Selling</option>
+
+<option>Storytelling</option>
+
+<option>Motivasi</option>
+
+<option>Lucu</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label class="font-semibold">
+
+Platform
+
+</label>
+
+<select
+
+id="ddlPlatform"
+
+class="w-full mt-2 rounded-xl bg-slate-800 p-4">
+
+<option>Facebook Reels</option>
+
+<option>Facebook Feed</option>
+
+<option>Instagram</option>
+
+<option>TikTok</option>
+
+<option>YouTube Shorts</option>
+
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ======================================================
+     AI GENERATOR CENTER
+======================================================= -->
+
+<section class="px-6 pb-8">
+
+<div class="rounded-3xl bg-slate-900 border border-slate-800 p-8 shadow-xl">
+
+<div class="flex items-center justify-between mb-8">
+
+<div>
+
+<h2 class="text-3xl font-extrabold">
+
+🤖 AI Generator Center
+
+</h2>
+
+<p class="text-slate-400 mt-2">
+
+Pilih generator yang ingin dijalankan.
+
+</p>
+
+</div>
+
+<div>
+
+<button
+id="btnGenerateAll"
+class="px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 via-cyan-500 to-sky-500 hover:scale-105 duration-300 font-bold">
+
+🚀 GENERATE ALL
+
+</button>
+
+</div>
+
+</div>
+
+<!-- BUTTON GRID -->
+
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-5">
+
+<button id="btnCaption"
+class="rounded-2xl bg-blue-600 hover:bg-blue-500 p-6 font-bold transition">
+
+📝
+
+<br><br>
+
+Caption AI
+
+</button>
+
+<button id="btnThumbnail"
+class="rounded-2xl bg-yellow-500 hover:bg-yellow-400 p-6 font-bold transition text-black">
+
+🎨
+
+<br><br>
+
+Thumbnail AI
+
+</button>
+
+<button id="btnPrompt"
+class="rounded-2xl bg-emerald-600 hover:bg-emerald-500 p-6 font-bold transition">
+
+🤖
+
+<br><br>
+
+Prompt AI
+
+</button>
+
+<button id="btnStoryboard"
+class="rounded-2xl bg-purple-600 hover:bg-purple-500 p-6 font-bold transition">
+
+🎬
+
+<br><br>
+
+Storyboard
+
+</button>
+
+<button id="btnVoice"
+class="rounded-2xl bg-pink-600 hover:bg-pink-500 p-6 font-bold transition">
+
+🎤
+
+<br><br>
+
+Voice Over
+
+</button>
+
+<button id="btnHook"
+class="rounded-2xl bg-orange-500 hover:bg-orange-400 p-6 font-bold transition">
+
+🎣
+
+<br><br>
+
+Hook
+
+</button>
+
+<button id="btnCTA"
+class="rounded-2xl bg-cyan-600 hover:bg-cyan-500 p-6 font-bold transition">
+
+💬
+
+<br><br>
+
+CTA
+
+</button>
+
+<button id="btnHashtag"
+class="rounded-2xl bg-red-600 hover:bg-red-500 p-6 font-bold transition">
+
+#
+
+<br><br>
+
+Hashtag
+
+</button>
+
+<button id="btnTitle"
+class="rounded-2xl bg-indigo-600 hover:bg-indigo-500 p-6 font-bold transition">
+
+🏆
+
+<br><br>
+
+Judul Reel
+
+</button>
+
+<button id="btnRandom"
+class="rounded-2xl bg-gradient-to-r from-fuchsia-600 to-pink-500 hover:scale-105 p-6 font-bold transition">
+
+🎲
+
+<br><br>
+
+AI Random Idea
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+     OUTPUT CENTER
+======================================================= -->
+
+<section class="px-6 pb-8">
+
+<div class="grid lg:grid-cols-2 gap-6">
+
+<!-- OUTPUT 1 -->
+
+<div class="rounded-3xl bg-slate-900 border border-slate-800 p-6">
+
+<h2 class="text-xl font-bold mb-4">
+
+📝 Caption Output
+
+</h2>
+
+<textarea
+id="outputCaption"
+rows="14"
+class="w-full rounded-xl bg-slate-800 p-4 outline-none resize-none"
+placeholder="Caption akan muncul di sini..."></textarea>
+
+<button
+id="btnCopyCaption"
+class="mt-4 w-full bg-blue-600 hover:bg-blue-500 py-3 rounded-xl font-bold">
+
+📋 Copy Caption
+
+</button>
+
+</div>
+
+<!-- OUTPUT 2 -->
+
+<div class="rounded-3xl bg-slate-900 border border-slate-800 p-6">
+
+<h2 class="text-xl font-bold mb-4">
+
+🤖 Prompt Output
+
+</h2>
+
+<textarea
+id="outputPrompt"
+rows="14"
+class="w-full rounded-xl bg-slate-800 p-4 outline-none resize-none"
+placeholder="Prompt AI akan muncul di sini..."></textarea>
+
+<button
+id="btnCopyPrompt"
+class="mt-4 w-full bg-emerald-600 hover:bg-emerald-500 py-3 rounded-xl font-bold">
+
+📋 Copy Prompt
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================================
+     QUICK EXPORT
+======================================================= -->
+
+<section class="px-6 pb-10">
+
+<div class="rounded-3xl bg-slate-900 border border-slate-800 p-8">
+
+<h2 class="text-2xl font-bold">
+
+⚡ Quick Export
+
+</h2>
+
+<p class="text-slate-400 mt-2">
+
+Simpan hasil generator hanya dengan satu klik.
+
+</p>
+
+<div class="grid md:grid-cols-4 gap-5 mt-8">
+
+<button
+id="btnExportTXT"
+class="bg-blue-600 hover:bg-blue-500 rounded-xl py-4 font-bold">
+
+📄 Export TXT
+
+</button>
+
+<button
+id="btnExportPDF"
+class="bg-red-600 hover:bg-red-500 rounded-xl py-4 font-bold">
+
+📕 Export PDF
+
+</button>
+
+<button
+id="btnSaveProject"
+class="bg-yellow-500 hover:bg-yellow-400 rounded-xl py-4 font-bold text-black">
+
+💾 Save Project
+
+</button>
+
+<button
+id="btnClearAll"
+class="bg-slate-700 hover:bg-slate-600 rounded-xl py-4 font-bold">
+
+🗑 Clear
+
+</button>
+
+</div>
+
+</div>
+
+    </section>
+    <!-- ======================================================
+     AI LOADING MODAL
+======================================================= -->
+
+<div
+id="aiLoading"
+class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50">
+
+    <div
+    class="bg-slate-900 rounded-3xl border border-slate-700 p-10 w-[360px] text-center shadow-2xl">
+
+        <div class="text-6xl animate-spin mb-6">
+
+            ⚙️
+
+        </div>
+
+        <h2 class="text-2xl font-bold">
+
+            AI Sedang Bekerja...
+
+        </h2>
+
+        <p class="text-slate-400 mt-3">
+
+            Mohon tunggu sebentar...
+
+        </p>
+
+        <div
+        class="mt-8 h-3 rounded-full bg-slate-700 overflow-hidden">
+
+            <div
+            class="h-full w-1/2 bg-gradient-to-r from-blue-500 via-cyan-400 to-yellow-400 animate-pulse">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ======================================================
+     TOAST NOTIFICATION
+======================================================= -->
+
+<div
+id="toastMessage"
+class="hidden fixed bottom-6 right-6 bg-emerald-600 px-6 py-4 rounded-2xl shadow-2xl z-50">
+
+    <div class="flex items-center gap-3">
+
+        <i class="fa-solid fa-circle-check text-2xl"></i>
+
+        <span id="toastText">
+
+            Berhasil disalin.
+
+        </span>
+
+    </div>
+
+</div>
+
+<!-- ======================================================
+     FLOATING ACTION BUTTON
+======================================================= -->
+
+<button
+id="btnScrollTop"
+class="fixed bottom-6 left-6 w-16 h-16 rounded-full bg-blue-600 hover:bg-blue-500 shadow-2xl text-2xl transition">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ======================================================
+     FOOTER
+======================================================= -->
+
+<footer
+class="border-t border-slate-800 bg-slate-950 mt-10">
+
+<div
+class="max-w-7xl mx-auto px-6 py-10">
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div>
+
+<h2 class="text-2xl font-extrabold">
+
+🚀 FB PRO AI STUDIO
+
+</h2>
+
+<p class="text-yellow-400 mt-2">
+
+Version 2.0
+
+</p>
+
+<p class="text-slate-400 mt-4">
+
+Ultimate Facebook Content Creator.
+
+Powered by NPA Smart System VVIP.
+
+</p>
+
+</div>
+
+<div>
+
+<h3 class="font-bold mb-4">
+
+Quick Menu
+
+</h3>
+
+<ul class="space-y-2 text-slate-400">
+
+<li>Dashboard</li>
+
+<li>Caption Studio</li>
+
+<li>Thumbnail Studio</li>
+
+<li>Prompt Studio</li>
+
+<li>Storyboard AI</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3 class="font-bold mb-4">
+
+Developer
+
+</h3>
+
+<p class="text-slate-400">
+
+PakD Sugiarto Kurniawan
+
+</p>
+
+<p class="text-slate-400">
+
+Powered by
+
+NPA Smart System VVIP
+
+</p>
+
+<p class="text-slate-400">
+
+Build 2026
+
+</p>
+
+</div>
+
+</div>
+
+<hr class="border-slate-800 my-8">
+
+<div
+class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+<p class="text-slate-500">
+
+© 2026 FB PRO AI STUDIO V2.0
+
+</p>
+
+<p class="text-cyan-400 font-semibold">
+
+Upload Sekali • Konten Jadi Berkali-kali 🚀
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- ======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script src="js/app.js"></script>
+
+<script src="js/upload.js"></script>
+
+<script src="js/caption-generator.js"></script>
+
+<script src="js/thumbnail-generator.js"></script>
+
+<script src="js/prompt-engine.js"></script>
+
+<script src="js/storyboard-generator.js"></script>
+
+<script src="js/export.js"></script>
+
+<script src="js/storage.js"></script>
+
+</main>
+
+</div>
+
+</body>
+
+</html>
