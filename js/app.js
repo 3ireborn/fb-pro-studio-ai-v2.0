@@ -7,6 +7,8 @@ Powered by NPA Smart System VVIP
 
 document.addEventListener("DOMContentLoaded", function () {
 const btnScrollTop = document.getElementById("btnScrollTop");
+    const btnSidebar = document.getElementById("btnSidebar");
+const sidebar = document.querySelector("aside");
     console.log("FB PRO AI STUDIO V2.0 Loaded");
 
     const loadingScreen = document.getElementById("loadingScreen");
@@ -20,6 +22,19 @@ const btnScrollTop = document.getElementById("btnScrollTop");
         }, 1800);
 
     }
+    /* ==============================
+   Sidebar Toggle
+================================ */
+
+if (btnSidebar && sidebar) {
+
+    btnSidebar.addEventListener("click", function () {
+
+        sidebar.classList.toggle("hidden");
+
+    });
+
+}
 /* ==============================
    Scroll To Top
 ================================ */
